@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrap{
+  height: 100vh;
+  width: 100%;
+   background-color:rgb(103, 196, 250); 
+  font-family: "Josefin Sans", sans-serif;
+  float: left;
+}
+ .clock {
+  width: 280px;
+  height: 280px;
+  background: white;
+  border: 18px solid black;
+  border-radius: 50%;
+  margin: 100px auto; 
+  position: relative; 
+}
+   
+
+ .clock:after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background: black;
+  position: absolute;
+  border-radius: 50%;
+  left: calc(130px);
+  top: calc(120px);
+  
+} 
+.clock li { 
+  list-style-type: none;
+
+} 
+
+.numbers {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  padding: 5%;
+  text-align: center;
+}
+.numbers span {
+  display: grid;
+  color:black;
+  font-size: 38px;
+}
+
+
+.numbers:nth-child(1) {
+  transform: rotate(30deg);
+}
+.numbers:nth-child(1) span {
+  transform: rotate(-30deg);
+}
+.numbers:nth-child(2) {
+  transform: rotate(60deg);
+}
+.numbers:nth-child(2) span {
+  transform: rotate(-60deg);
+}
+.numbers:nth-child(3) {
+  transform: rotate(90deg);
+}
+.numbers:nth-child(3) span {
+  transform: rotate(-90deg);
+}
+.numbers:nth-child(4) {
+  transform: rotate(120deg);
+}
+.numbers:nth-child(4) span {
+  transform: rotate(-120deg);
+}
+.numbers:nth-child(5) {
+  transform: rotate(150deg);
+}
+.numbers:nth-child(5) span {
+  transform: rotate(-150deg);
+}
+.numbers:nth-child(6) {
+  transform: rotate(180deg);
+}
+.numbers:nth-child(6) span {
+  transform: rotate(-180deg);
+}
+.numbers:nth-child(7) {
+  transform: rotate(210deg);
+}
+.numbers:nth-child(7) span {
+  transform: rotate(-210deg);
+}
+.numbers:nth-child(8) {
+  transform: rotate(240deg);
+}
+.numbers:nth-child(8) span {
+  transform: rotate(-240deg);
+ } 
+
+ .numbers:nth-child(9) {
+  transform: rotate(270deg);
+}
+.numbers:nth-child(9) span {
+  transform: rotate(-270deg);
+}
+.numbers:nth-child(10) {
+  transform: rotate(300deg);
+}
+.numbers:nth-child(10) span {
+  transform: rotate(-300deg);
+}
+.numbers:nth-child(11) {
+  transform: rotate(330deg);
+}
+.numbers:nth-child(11) span {
+  transform: rotate(-330deg);
+} 
+
+
+ #second:after {
+  content: "";
+  width: 4px;
+  height: 107px;
+   background: red; 
+  position: absolute;
+  left: calc(136px);
+  top: 55px;
+}  
+
+
+#minute:after {
+content: "";
+width: 8px;
+height: 79px;
+background: gray;
+position: absolute;
+left: calc(150px);
+top: 29%;
+transform: rotate(-120deg);
+} 
+
+ #hour:after{
+  content: "";
+  width: 12px;
+  height: 65px;
+  border-radius: 6px 3px 3px;
+  background: orange;
+  position: absolute;
+  left: calc(130px);
+   top: 50%; 
+
+
+} 
